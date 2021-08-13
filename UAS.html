@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="UAS.css">
+	<title>Kalkulator Determinan</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="kiri">
+				<h1>Kalkulator Determinan</h1>
+			</div>
+			<div class="kanan">
+				<ul>
+					<li>Pilih Ordo</li>
+					<li id="kalidua">2 x 2</li>
+					<li id="kalitiga">3 x 3</li>
+					<li id="kaliempat">4 x 4</li>
+				</ul>
+			</div>
+		</div>
+		<div class="isi">
+			<div class="input">
+	<table cellspacing="3px" cellpadding='2px' >
+      <tbody class="thsize">
+
+            <tr class="thsize satu">
+                <th class="thsize">(1,1)</th>
+                <td class="thsize">
+                    <input class="form-control" name="satusatu" ngControl="firstName" type="number" [(ngModel)]="webUser.firstName"  #firstName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="thsize">(1,2)</th>
+                <td class="thsize">
+                    <input class="form-control" name="satudua" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm" >
+                </td>
+                <th class="dua">(1,3)</th>
+                <td class="dua">
+                    <input class="form-control" name="satutiga" ngControl="firstName" type="number" [(ngModel)]="webUser.firstName"  #firstName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="tiga">(1,4)</th>
+                <td class="tiga">
+                    <input class="form-control" name="satuempat" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm" >
+                </td>
+
+            </tr>
+
+    		 <tr class="thsize duas">
+                <th class="thsize">(2,1)</th>
+                <td class="thsize">
+                    <input class="form-control" name="duasatu" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="thsize">(2,2)</th>
+                <td class="thsize">
+                       <input class="form-control" name="duadua" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <th class="dua">(2,3)</th>
+                <td class="dua">
+                    <input class="form-control" name="duatiga" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="tiga">(2,4)</th>
+                <td class="tiga">
+                       <input class="form-control" name="duaempat" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+            </tr> 
+                <tr class="thsize tigas">
+                <th class="thsize">(3,1)</th>
+                <td class="thsize">
+                    <input class="form-control" name="tigasatu" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="thsize">(3,2)</th>
+                <td class="thsize">
+                       <input class="form-control" name="tigadua" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <th class="thsize">(3,3)</th>
+                <td class="thsize">
+                    <input class="form-control" name="tigatiga" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="tiga">(3,4)</th>
+                <td class="tiga">
+                       <input class="form-control" name="tigaempat" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+            </tr> 
+                 <tr class="thsize empat">
+                <th class="thsize">(4,1)</th>
+                <td class="thsize">
+                    <input class="form-control" name="empatsatu" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="thsize">(4,2)</th>
+                <td class="thsize">
+                       <input class="form-control" name="empatdua" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <th class="thsize">(4,3)</th>
+                <td class="thsize">
+                    <input class="form-control" name="empattiga" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+                <td class="thsize"></td>        
+
+                <th class="thsize">(4,4)</th>
+                <td class="thsize">
+                       <input class="form-control" name="empatempat" ngControl="lastName" type="number" [(ngModel)]="webUser.lastName"  #lastName="ngForm">
+                </td>
+            </tr> 
+                <tr class="thsize">
+            <th class="thsize"></th>
+                <td class="thsize" colspan="4">
+                   <div id="ordo4" class="tombol" onclick="empath()">Jumlahkan</div>
+                </td>
+            </tr>         
+          </tbody>
+    </table>
+  
+
+			</div>
+			<div id="output">
+				<h3 class="h3lama">HASIL</h3>
+				
+			</div>
+		</div>
+	</div>
+<script src="UAS.js"></script>	
+</body>
+</html>

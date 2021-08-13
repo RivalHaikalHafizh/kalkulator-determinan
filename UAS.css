@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:linear-gradient(to right ,#ba12bc,#97f5e2);
+}
+
+.container{
+	width: 100%;,
+	height: 800px;
+	
+}
+
+/*awal header*/
+
+.header{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
+}
+
+.header ul li{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 2px;
+	margin: 10px;
+	background-color: #ba12bc;
+	border-radius: 25px;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+ul li a{
+	text-decoration: none;
+}
+ul li:nth-child(1){
+	width: 100px;
+}
+
+body h1{
+	color: white;
+	text-shadow: 1px 1px 1px #97f5e2;
+}
+/* akhir header */
+/*contain*/
+.isi{
+	width: 850px;
+	height: 527px;
+	background-color: rgba(255,255,255,0.3);
+	margin: 20px auto 10px;
+	border-radius: 25px;
+	border: 1px solid rgba(255,255,255,0.3);
+	display: flex;
+	overflow: hidden;
+}
+
+.isi::before{
+	content: "Determinan adalah nilai yang dapat dihitung dari unsur-unsur suatu martiks persegi kegunaan dari determinan antara lain untuk menentukan apakah suatu matriks persegi memiliki invers atau tidak";
+	height: 200px;
+	width: 200px;
+	background-color: rgba(255,255,255,0.6);
+	position: absolute;
+	left: 10px;
+	border-radius: 10px;
+	padding:5px;
+  	box-sizing:border-box;
+}
+.isi::after{
+	content: "Info:sesuaikan urutan seuai dengan (i,j) i=baris j=kolom ubah ordo sesuaikan dengan yang diperluka(dengan mengubahnya di tombol header yang sudah disediakan) ";
+	height: 150px;
+	width: 200px;
+	background-color:rgba(255,255,255,0.6);
+	position: absolute;
+	left: 10px;
+	top: 300px;
+	border-radius: 10px;
+	  padding:5px;
+  box-sizing:border-box;
+}
+
+.input{
+	flex: 2;
+	overflow: auto;
+	padding: 10px;
+	display: flex;
+	align-content: center;
+}
+
+input[type="number"]{
+	width: 90px;
+}
+
+
+
+#output{
+	background-color: rgba(255,255,255,0.2);
+	flex:1;
+	overflow: auto;
+
+}
+
+#output ul#outputUl li{
+	width: 100%;
+	height: 40px;
+	background-color: red;
+	border-bottom:1px solid rgba(255,255,255,0.3); 
+	color: white
+
+}
+
+h3{
+	display: block;
+	height: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.tombol{
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.none{
+	display: none;
+}
