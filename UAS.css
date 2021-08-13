@@ -60,29 +60,6 @@ body h1{
 	overflow: hidden;
 }
 
-.isi::before{
-	content: "Determinan adalah nilai yang dapat dihitung dari unsur-unsur suatu martiks persegi kegunaan dari determinan antara lain untuk menentukan apakah suatu matriks persegi memiliki invers atau tidak";
-	height: 200px;
-	width: 200px;
-	background-color: rgba(255,255,255,0.6);
-	position: absolute;
-	left: 10px;
-	border-radius: 10px;
-	padding:5px;
-  	box-sizing:border-box;
-}
-.isi::after{
-	content: "Info:sesuaikan urutan seuai dengan (i,j) i=baris j=kolom ubah ordo sesuaikan dengan yang diperluka(dengan mengubahnya di tombol header yang sudah disediakan) ";
-	height: 150px;
-	width: 200px;
-	background-color:rgba(255,255,255,0.6);
-	position: absolute;
-	left: 10px;
-	top: 300px;
-	border-radius: 10px;
-	  padding:5px;
-  box-sizing:border-box;
-}
 
 .input{
 	flex: 2;
